@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse
-from flask import session
+#from flask import session
 from markupsafe import re
-from psutil import users
+#from psutil import users
 from .forms import UserLoginForm, UserRegistryForm
 from django.contrib.auth.models import User
 # 引入验证登陆的装饰器

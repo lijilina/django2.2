@@ -3,7 +3,7 @@ from distutils.command.upload import upload
 from re import I
 from statistics import mode
 from tabnanny import verbose
-from tkinter import CASCADE
+#from tkinter import CASCADE
 from django.db import models
 # 导入Django内建User模型
 from django.contrib.auth.models import User

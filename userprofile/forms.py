@@ -1,7 +1,7 @@
 # 引入表单类
 from curses.ascii import US
 from dataclasses import field
-from charset_normalizer import models
+#from charset_normalizer import models
 from django import forms
 # 引入User模型
 from django.contrib.auth.models import User

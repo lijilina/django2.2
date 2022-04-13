@@ -1,5 +1,5 @@
 # 引入表单类
-from charset_normalizer import models
+#from charset_normalizer import models
 from django import forms
 # 引入文章模型
 from .models import ArticlePost

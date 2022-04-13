@@ -1,5 +1,5 @@
 from distutils.command.upload import upload
-from turtle import update
+#from turtle import update
 from django.db import models
 from django.contrib.auth.models import User
 # 引入内置信号

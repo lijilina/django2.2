@@ -1,13 +1,13 @@
 from distutils.command.build_scripts import first_line_re
 from hashlib import new
 from re import I
-from turtle import title, update
+#from turtle import title, update
 from django.forms import forms
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
 from django.test import tag
 from markupsafe import re
-from numpy import identity
+#from numpy import identity
 # 导入数据模型ArticlePost
 from .models import ArticlePost, ArticleColumn
 # 倒入支持markdown
