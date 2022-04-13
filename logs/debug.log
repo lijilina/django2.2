@@ -1,0 +1,163 @@
+/Users/lijialin/myblog/myblog/myblog/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article-detail/48/ HTTP/1.1" 200 37701
+"GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=f6dd30807a HTTP/1.1" 200 12237
+"GET /static/ckeditor/ckeditor/plugins/codesnippet/icons/codesnippet.png?t=LAHF HTTP/1.1" 200 597
+"GET /article/article-detail/48/ HTTP/1.1" 200 37701
+"GET /article/article-detail/48/ HTTP/1.1" 200 37701
+Internal Server Error: /article/article-detail/9999/
+Traceback (most recent call last):
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lijialin/myblog/myblog/article/views.py", line 98, in article_detail
+    article.total_view += 1
+UnboundLocalError: local variable 'article' referenced before assignment
+"GET /article/article-detail/9999/ HTTP/1.1" 500 67338
+Internal Server Error: /article/article-detail/9999/
+Traceback (most recent call last):
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lijialin/myblog/myblog/article/views.py", line 98, in article_detail
+    article.total_view += 1
+UnboundLocalError: local variable 'article' referenced before assignment
+"GET /article/article-detail/9999/ HTTP/1.1" 500 67473
+Internal Server Error: /article/article-detail/9999/
+Traceback (most recent call last):
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lijialin/myblog/myblog/article/views.py", line 98, in article_detail
+    article.total_view += 1
+UnboundLocalError: local variable 'article' referenced before assignment
+"GET /article/article-detail/9999/ HTTP/1.1" 500 67473
+/Users/lijialin/myblog/myblog/article/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /article/article-detail/9999/
+Traceback (most recent call last):
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lijialin/myblog/myblog/article/views.py", line 98, in article_detail
+    article.total_view += 1
+UnboundLocalError: local variable 'article' referenced before assignment
+"GET /article/article-detail/9999/ HTTP/1.1" 500 67473
+/Users/lijialin/myblog/myblog/comment/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /article/article-detail/9999/
+Traceback (most recent call last):
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lijialin/myblog/myblog/article/views.py", line 98, in article_detail
+    article.total_view += 1
+UnboundLocalError: local variable 'article' referenced before assignment
+"GET /article/article-detail/9999/ HTTP/1.1" 500 67473
+Internal Server Error: /article/article-detail/9999/
+Traceback (most recent call last):
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lijialin/myblog/myblog/article/views.py", line 98, in article_detail
+    article.total_view += 1
+UnboundLocalError: local variable 'article' referenced before assignment
+"GET /article/article-detail/9999/ HTTP/1.1" 500 67473
+"GET /article/article-detail/48/ HTTP/1.1" 200 37701
+/Users/lijialin/myblog/myblog/article/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /article/article-detail/4888/
+Traceback (most recent call last):
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lijialin/myblog/myblog/article/views.py", line 99, in article_detail
+    article.total_view += 1
+UnboundLocalError: local variable 'article' referenced before assignment
+"GET /article/article-detail/4888/ HTTP/1.1" 500 67388
+Internal Server Error: /article/article-detail/4888/
+Traceback (most recent call last):
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lijialin/myblog/myblog/article/views.py", line 99, in article_detail
+    article.total_view += 1
+UnboundLocalError: local variable 'article' referenced before assignment
+"GET /article/article-detail/4888/ HTTP/1.1" 500 67523
+/Users/lijialin/myblog/myblog/article/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /article/article-detail/4888/
+"GET /article/article-detail/4888/ HTTP/1.1" 404 1780
+Not Found: /article/article-detail/4888/
+"GET /article/article-detail/4888/ HTTP/1.1" 404 1780
+/Users/lijialin/myblog/myblog/article/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/lijialin/myblog/myblog/myblog/settings.py changed, reloading.
+ERROR 2022-04-11 20:42:45,650 log 4063 6258929664 Internal Server Error: /article/article-detail/4888/
+Traceback (most recent call last):
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lijialin/myblog/myblog/article/views.py", line 99, in article_detail
+    article.total_view += 1
+UnboundLocalError: local variable 'article' referenced before assignment
+ERROR 2022-04-11 20:42:45,922 log 4063 6258929664 Internal Server Error: /article/article-detail/4888/
+Traceback (most recent call last):
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lijialin/myblog/myblog/article/views.py", line 99, in article_detail
+    article.total_view += 1
+UnboundLocalError: local variable 'article' referenced before assignment
+ERROR 2022-04-11 20:42:46,503 log 4063 6258929664 Internal Server Error: /article/article-detail/4888/
+Traceback (most recent call last):
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lijialin/myblog/myblog/article/views.py", line 99, in article_detail
+    article.total_view += 1
+UnboundLocalError: local variable 'article' referenced before assignment
+ERROR 2022-04-11 20:42:46,984 log 4063 6258929664 Internal Server Error: /article/article-detail/4888/
+Traceback (most recent call last):
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lijialin/myproject-flask/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lijialin/myblog/myblog/article/views.py", line 99, in article_detail
+    article.total_view += 1
+UnboundLocalError: local variable 'article' referenced before assignment
