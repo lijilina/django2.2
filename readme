@@ -1,0 +1,3 @@
+docker 运行
+
+docker run -itd -p5000:5000 -e host='mysqlhost' --name myblog lijialinaa/python:django2.2

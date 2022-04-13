@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from posix import environ
 import pymysql
 pymysql.install_as_MySQLdb()
 
@@ -82,6 +83,8 @@ WSGI_APPLICATION = 'myblog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+env_list = os.environ
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -89,7 +92,7 @@ DATABASES = {
         'CONN_MAX_AGE': 20,
         'USER': 'test',
         'PASSWORD': 'KsWnuh%J1Ro&XSKA',
-        'HOST': '',
+        'HOST': env_list.get('host'),
         'PORT': '3306'
     }
 }
