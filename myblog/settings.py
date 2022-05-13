@@ -14,10 +14,18 @@ import os
 from posix import environ
 import pymysql
 pymysql.install_as_MySQLdb()
+import configparser
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# 使用configparser 模块读取外部配置文件
+config_file = os.path.join(BASE_DIR, '../conf/dev.ini')
+cf = configparser.RawConfigParser()
+cf.read(config_file)
+# 读取示例
+# print(cf.get("mysql", "host"))
+# print(cf.get("mysql", "password"))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -47,6 +55,9 @@ INSTALLED_APPS = [
     'taggit',
     'ckeditor',
     'mptt',
+    'django_q',
+    'rest_framework',
+    'drf',
 ]
 
 MIDDLEWARE = [
@@ -88,12 +99,12 @@ env_list = os.environ
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'myblog',
+        'NAME': cf.get("mysql", "db"),
         'CONN_MAX_AGE': 20,
-        'USER': 'test',
-        'PASSWORD': 'KsWnuh%J1Ro&XSKA',
-        'HOST': env_list.get('host'),
-        'PORT': '3306'
+        'USER': cf.get("mysql", "user"),
+        'PASSWORD': cf.get("mysql", "password"),
+        'HOST': cf.get("mysql", "host"),
+        'PORT': cf.get("mysql", "port"),
     }
 }
 
@@ -143,18 +154,18 @@ STATICFILES_DIRS = (
 )
 
 # SMTP服务器，改为你的邮箱的smtp!
-EMAIL_HOST = 'smtp.qq.com'
+EMAIL_HOST = cf.get("email", "EMAIL_HOST")
 # 改为你自己的邮箱名！
-EMAIL_HOST_USER = '1354104902@qq.com'
+EMAIL_HOST_USER = cf.get("email", "EMAIL_HOST_USER")
 # 你的邮箱密码
 # EMAIL_HOST_PASSWORD = 'thjbnkmhikvjibid'
-EMAIL_HOST_PASSWORD = 'hyztogqxeuwjjbjc'
+EMAIL_HOST_PASSWORD = cf.get("email", "EMAIL_HOST_PASSWORD")
 # 发送邮件的端口
-EMAIL_PORT = 25
+EMAIL_PORT = cf.get("email", "EMAIL_PORT")
 # 是否使用 TLS
 EMAIL_USE_TLS = True
 # 默认的发件人
-DEFAULT_FROM_EMAIL = '1354104902@qq.com'
+DEFAULT_FROM_EMAIL = cf.get("email", "DEFAULT_FROM_EMAIL")
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
@@ -258,3 +269,27 @@ LOGGING = {
         },
     }
 }
+
+Q_CLUSTER = {
+    'name': 'myblog',#项目名称
+   'workers': 4,  #worker数。默认为当前主机的CPU计数，
+    'recycle': 500,  # worker在回收之前要处理的任务数。有助于定期释放内存资源。默认为500。
+    'timeout': 60,  # 任务超时设置,如果是爬虫任务建议设置长一些
+    'compress': True,  # 数据压缩
+    'save_limit': 250,  # 限制保存到Django的成功任务的数量。0为无限，-1则不会保存
+    'queue_limit': 500,  # 排队的任务数量，默认为workers**2。
+    'cpu_affinity': 1,  # 设置每个工作人员可以使用的处理器数量。根据经验; cpu_affinity 1支持重复的短期运行任务，而没有亲和力则有利于长时间运行的任务。
+     'label': 'Django Q',  # 用于Django Admin页面的标签。默认为'Django Q'，之后我会根据源码做一个中文版的django-admin页面。如果有需求请私信我
+    'redis': {#如果配置了redis缓存，可以使用django的设置，请参考官方文档。
+        'host': '120.53.224.20',
+        'port': 16379,
+        'db': 0, }
+}
+
+
+# 设置默认的全局认证方案
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    )}

@@ -21,6 +21,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # 新增drf框架
+    path('v1/', include('drf.urls')),
+    path('api-auth/', include('rest_framework.urls')),
     # 新增article
     path('article/', include('article.urls', namespace='article')),
     # 新增userprofile
